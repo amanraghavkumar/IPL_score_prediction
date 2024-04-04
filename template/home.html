@@ -1,0 +1,44 @@
+<html>
+    <style>
+        .section
+        {
+            width: 800px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            background-color:skyblue;
+            align-items: center;
+            text-align:center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin:auto;
+            margin-top:40px;
+            
+        }
+        
+    </style>
+    <body>
+        <div class="section">
+    
+            <div class='login'>
+            <h1>IPL SCORE PREDICTION</h1>
+            <form action="{{url_for('Predict_datapoint')}}" method="post">
+                <input type='text' name="venue" placeholder="venue" required="required" /><br>
+                <br/>
+                <input type='text' name="bat_team" placeholder="bat_team" required="required"/><br>
+                <br/>
+                <input type='text' name="bowl_team" placeholder="bowl_team" required="required"/><br>
+                <br/>
+                <input type='text' name="runs" placeholder="runs" required="required"/><br>
+                <br/>
+                <input type='text' name="wickets" placeholder="wickets" required="required"/><br>
+                <br/>
+                <input type='text' name="overs" placeholder="overs" required="required"/><br>
+                <br/>
+                <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+            </form>
+        
+        </div>
+    </div> 
+    <body>
+</html>
